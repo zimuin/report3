@@ -50,35 +50,67 @@ public class Enemy {
             System.out.printf("モンスター%sは倒れた。\n", name);
         }
     }
-
+    
+    /**
+     * クラス外からEnemyの名前を取得するためのメソッド
+     * @return Enemyクラスのnameに保存されている値
+     */
     public String getName() {
         return this.name;
-    }
-
+    } 
+    
+    /**
+     * クラス外からEnemyの体力値を取得するためのメソッド
+     * @return　Enemyクラスのhitpointに保存されている値
+     */
     public int getHitpoint() {
         return this.hitPoint;
     }
 
+    /**
+     * クラス外からEnemyの攻撃力値を取得するためのメソッド
+     * @return　Enemyクラスのattackに保存されている値
+     */
     public int getAttack() {
         return this.attack;
     }
 
+    /**
+     * クラス外からEnemyの死亡状況値を取得するためのメソッド
+     * @return　Enemyクラスのdeadに保存されている値
+     */
     public boolean getDead() {
         return this.dead;
     }
 
+    /**
+     * クラス外からEnemyの名前を設定するためのメソッド
+     * @param name　設定したEnemyの名前
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * クラス外からEnemyの体力値を設定するためのメソッド
+     * @param hitPoint　設定したEnemyの体力値
+     */
     public void setHitpoint(int hitPoint) {
         this.hitPoint = hitPoint;
     }
 
+    /**
+     * クラス外からEnemyの攻撃力値を設定するためのメソッド
+     * @param attack　設定したEnemyの攻撃力値
+     */
     public void setAttack(int attack) {
         this.attack = attack;
     }
 
+    /**
+     * クラス外からEnemyの死亡状況値を設定するためのメソッド
+     * @param dead　設定したEnemyの死亡状況値
+     */
     public void setDead(boolean dead) {
         this.dead = dead;
     }
